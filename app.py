@@ -432,6 +432,7 @@ def load_css():
         ::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(135deg, var(--accent), var(--primary));
         }
+                
     </style>
     """, unsafe_allow_html=True)
 
@@ -588,3 +589,116 @@ if st.button("Predict Anomaly"):
     else:
         st.error("❌ Model not loaded. Please check the file.")
 st.markdown('</div>', unsafe_allow_html=True)
+# ENHANCED FOOTER WITH SOCIAL LINKS
+# ---------------------------------
+st.markdown("""
+<style>
+.custom-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-footer h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.developer-info {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.system-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        min-width: 200px;
+        justify-content: center;
+    }
+}
+</style>
+
+<div class="custom-footer">
+    <h3>Bank Transaction Anomaly Detection System</h3>
+    <div class="social-links">
+        <a href="https://github.com/furqank73" target="_blank" class="social-link">
+            <span class="social-icon"></span>
+            <span>GitHub Profile</span>
+        </a>
+        <a href="https://www.linkedin.com/in/furqan-khan-256798268/" target="_blank" class="social-link">
+            <span class="social-icon"></span>
+            <span>LinkedIn</span>
+        </a>
+        <a href="mailto:furqankhan123213@gmail.com" class="social-link">
+            <span class="social-icon"></span>
+            <span>Contact</span>
+        </a>
+    </div>
+    <div class="developer-info">
+        <p>Developed ❤️ by <strong>Furqan Khan</strong></p>
+        <div class="system-badge">
+            Secure •  AI-Powered •  Real-time Analytics
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
