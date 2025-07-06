@@ -46,6 +46,11 @@ All models were evaluated using:
 
 ## 🚀 Streamlit Web App
 
+## 🔗 Live Demo
+
+Check out the deployed app here:
+👉 [**Bank Anomaly Prediction App**](https://bank-anomaly-prediction.streamlit.app/)
+
 ### Features:
 
 * 🔘 Manual input of transaction data
