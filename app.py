@@ -589,6 +589,7 @@ if st.button("Predict Anomaly"):
     else:
         st.error("❌ Model not loaded. Please check the file.")
 st.markdown('</div>', unsafe_allow_html=True)
+
 # ENHANCED FOOTER WITH SOCIAL LINKS
 # ---------------------------------
 st.markdown("""
