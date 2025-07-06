@@ -3,6 +3,9 @@ import numpy as np
 import pickle
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
+import warnings
+warnings.filterwarnings("ignore")
+import xgboost as xgb
 
 # ----------------------
 # PAGE CONFIG
