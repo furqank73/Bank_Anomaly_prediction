@@ -515,7 +515,7 @@ model = load_model()
 # App header
 st.markdown("""
 <div class="app-header">
-    <h1> Credit Card Anomaly Detection</h1>
+    <h1> Bank Transaction Anomaly Detection</h1>
     <p>Advanced fraud detection system powered by machine learning</p>
 </div>
 """, unsafe_allow_html=True)
